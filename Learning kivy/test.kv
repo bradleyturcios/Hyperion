@@ -1,0 +1,34 @@
+
+
+<Title>:     #we are using the title widget class, and telling kivy everythin will be in a box layout
+	BoxLayout:
+		size_hint_y:.01
+		pos_hint: {'x': 0}
+		orientation: 'horizontal'    #horzontal orientation means anythin we add will be added next to it.
+		Label:                      #We are creating a label(textbox)           
+			text: 'sensor1'        #this is where we tell what to display. the text. if we set this equal to a variable, such as an ultrasonic value ...
+			font_size: 20           #Font size of text
+		Label:                      #We are creating another label
+			text: 'sensor2'           #the text it will display 
+			font_size: 20             #font size
+
+<Texty>:                       # We now refer to a different class, the text widget class. nothing should be too different than above class
+    BoxLayout:
+		size: root.size
+		pos: root.pos
+		orientation: 'horizontal'
+		Label:
+			text: 'first box'
+			font_size: 30
+		Label:
+			text: 'second box'
+			font_size: 30
+
+<Man>:
+	orientation: 'vertical'
+    Title:
+	Texty:
+	
+<ContBox>:
+	Man:
+	Texty:
