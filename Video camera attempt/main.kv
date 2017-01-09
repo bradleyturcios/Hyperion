@@ -1,0 +1,19 @@
+<VideoWidget>:
+	BoxLayout:
+		size: root.size
+		pos: root.pos		
+		orientation: 'horizontal'
+		Label:
+			text: 'Pict every %s second' % str(camslider.value)
+		Slider:
+			id: camslider
+			value: 2
+			range: (.5, 4)
+			step: .5
+	BoxLayout
+		pos: root.pos
+		Camera:
+			play: True
+			resolution_x: 320
+			resolution_y: 240
+			index: 2

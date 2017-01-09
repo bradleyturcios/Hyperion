@@ -16,8 +16,6 @@ from kivy.base import runTouchApp
 so someone else has written code for this before, and compiled it into libraries. We just "import" it and manipulate it to our need"""
 
 
-
-<<<<<<< HEAD
 class Title(Widget):          #Creating a class, called titlewidget, that will hold the two labels (textboxes) of the title
     def __init__(self, **kwargs):
         super(Title, self).__init__(**kwargs)                          #"Pass" just means do nothing and continue
@@ -33,21 +31,6 @@ class Man(BoxLayout):
 class ContBox(BoxLayout):
     def __init__(self, **kwargs):
         super(ContBox, self).__init__(**kwargs)
-=======
-class TitleWidget(Widget):          #Creating a class, called titlewidget, that will hold the two labels (textboxes) of the title
-    pass                            #"Pass" just means do nothing and continue
-
-class TextWidget(Widget):           #Creating a class, called textwidget, that will hold text, that is the sensor values.
-    pass                            #Same pass as before
-
-class MainWidget(Widget):            #Create a class that will be the main widget. This is where all the parts and widgets will be condensed into one window.
-    pass                            #Same pass paas before
-
-class MC(App):                      #This is the class we need to create for python. We inherit from App. That is, we tell this class to expect to use all of the components of an application.
-    def build(self):                #Create the build function. This is function that will hold all of the rules for how the final application will look.
-        self.load_kv('mc.kv')       #We tell the file to look at the mc.kv file.
-        return Mainwidget()         #We then tell it which class is our main class, that is the one with all of th pieces condensed into one window. And we return it, thas is run it.
->>>>>>> origin/master
 
 class TestApp(App):
     def build(self):
