@@ -1,0 +1,19 @@
+{
+    "options": {
+        "config": "config.json", 
+        "command": "start", 
+        "logformat": "standard", 
+        "cdc": false, 
+        "logdir": null, 
+        "colour": false, 
+        "loglevel": "info", 
+        "reactor": null, 
+        "logtofile": false, 
+        "cbdir": "C:\\Users\\New User\\Documents\\GitHub\\Hyperion\\Learning Crossbar\\.crossbar"
+    }, 
+    "pid": 6064, 
+    "argv": [
+        "C:\\Users\\New User\\AppData\\Local\\Programs\\Python\\Python35-32\\Scripts\\crossbar", 
+        "start"
+    ]
+}
