@@ -1,0 +1,19 @@
+{
+    "pid": 2100, 
+    "options": {
+        "reactor": null, 
+        "cdc": false, 
+        "loglevel": "info", 
+        "logtofile": false, 
+        "logformat": "standard", 
+        "command": "start", 
+        "logdir": null, 
+        "config": "config.json", 
+        "colour": false, 
+        "cbdir": "C:\\Users\\Bradley\\Documents\\GitHub\\Hyperion\\Learning Crossbar\\.crossbar"
+    }, 
+    "argv": [
+        "C:\\Python27\\Scripts\\crossbar", 
+        "start"
+    ]
+}

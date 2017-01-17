@@ -33,24 +33,18 @@
             ],
             "transports": [
                 {
-                    "type": "universal",
+                    "type": "web",
                     "endpoint": {
                         "type": "tcp",
                         "port": 8080
                     },
-                    "rawsocket": {
-                    },
-                    "websocket": {
+                    "paths": {
+                        "/": {
+                            "type": "static",
+                            "directory": ".."
+                        },
                         "ws": {
                             "type": "websocket"
-                        }
-                    },
-                    "web": {
-                        "paths": {
-                            "/": {
-                                "type": "static",
-                                "directory": ".."
-                            }
                         }
                     }
                 }
