@@ -1,0 +1,19 @@
+{
+    "pid": 3828, 
+    "options": {
+        "config": "config.json", 
+        "command": "start", 
+        "logtofile": false, 
+        "logdir": null, 
+        "cdc": false, 
+        "colour": false, 
+        "reactor": null, 
+        "cbdir": "C:\\Users\\New User\\Desktop\\.crossbar", 
+        "loglevel": "info", 
+        "logformat": "standard"
+    }, 
+    "argv": [
+        "C:\\Users\\New User\\AppData\\Local\\Programs\\Python\\Python35-32\\Scripts\\crossbar", 
+        "start"
+    ]
+}
