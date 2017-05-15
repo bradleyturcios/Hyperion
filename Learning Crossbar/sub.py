@@ -1,5 +1,8 @@
-from autobahn.twisted.wamp import ApplicationSession
+from __future__ import print_function
+from twisted.internet import reactor
 from twisted.internet.defer import inlineCallbacks
+from autobahn.twisted.wamp import ApplicationSession, ApplicationRunner
+import time
 
 
 class MyComponent(ApplicationSession):
@@ -15,3 +18,6 @@ class MyComponent(ApplicationSession):
             print("subscribed to topic")
         except Exception as e:
             print("could not subscribe to topic: {0}".format(e))
+if __name__ == '__main__':
+    runner = ApplicationRunner(url=u"ws://192.168.2.2:8080/ws", realm=u"realm1")
+    runner.run(MyComponent)
